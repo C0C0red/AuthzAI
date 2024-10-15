@@ -1,0 +1,31 @@
+{
+  "host": "https://api.example.com",
+  "user_auth": [
+    {
+      "headers": {
+        "Authorization": "Bearer admin_token"
+      },
+      "description": "Admin user with full permissions."
+    },
+    {
+      "headers": {
+        "Authorization": "Bearer read_only_token"
+      },
+      "description": "Read-only user with limited permissions."
+    }
+  ],
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/v1/account/details"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/account/update"
+    },
+    {
+      "method": "GET",
+      "path": "/v1/billing/info"
+    }
+  ]
+}
